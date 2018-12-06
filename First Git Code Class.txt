@@ -1,0 +1,159 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\scheeramban>git --version
+git version 2.19.2.windows.1
+
+C:\Users\scheeramban>cd
+C:\Users\scheeramban
+
+C:\Users\scheeramban>cd C:\Users\scheeramban\Desktop\Full Stack
+
+C:\Users\scheeramban\Desktop\Full Stack>git init
+Initialized empty Git repository in C:/Users/scheeramban/Desktop/Full Stack/.git/
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Onefile.html
+        Twofile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\scheeramban\Desktop\Full Stack>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+C:\Users\scheeramban\Desktop\Full Stack>git add .
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Onefile.html
+        new file:   Twofile.html
+
+
+C:\Users\scheeramban\Desktop\Full Stack>git commit -m "initial commit"
+[master (root-commit) 3fb0acd] initial commit
+ Committer: Sebastian George Cheeramban <scheeramban@pc.factset.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Onefile.html
+ create mode 100644 Twofile.html
+
+C:\Users\scheeramban\Desktop\Full Stack>git config --global user.name "cgsebastian45"
+
+C:\Users\scheeramban\Desktop\Full Stack>git config --global user.name
+cgsebastian45
+
+C:\Users\scheeramban\Desktop\Full Stack>git config --global user.email "cgsebastian45@gmail.com"
+
+C:\Users\scheeramban\Desktop\Full Stack>git config --global user.email
+cgsebastian45@gmail.com
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Firstfile.txt
+        Secondfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\scheeramban\Desktop\Full Stack>git add Firstfile.txt Secondfile.txt
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Firstfile.txt
+        new file:   Secondfile.txt
+
+
+C:\Users\scheeramban\Desktop\Full Stack>git commit -m "Second Commit"
+[master 38561e8] Second Commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Firstfile.txt
+ create mode 100644 Secondfile.txt
+
+C:\Users\scheeramban\Desktop\Full Stack>git remote add origin https://github.com/cgsebastian45/FullStack.git
+
+C:\Users\scheeramban\Desktop\Full Stack>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 472 bytes | 472.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/cgsebastian45/FullStack/pull/new/master
+remote:
+To https://github.com/cgsebastian45/FullStack.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\scheeramban\Desktop\Full Stack>git add Third.txt
+
+C:\Users\scheeramban\Desktop\Full Stack>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Third.txt
+
+
+C:\Users\scheeramban\Desktop\Full Stack>git commit -m "Third File"
+[master 64f21be] Third File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Third.txt
+
+C:\Users\scheeramban\Desktop\Full Stack>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 231 bytes | 231.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cgsebastian45/FullStack.git
+   38561e8..64f21be  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\scheeramban\Desktop\Full Stack>
